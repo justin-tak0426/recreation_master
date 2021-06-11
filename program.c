@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-#include <conio.h>
 #include <string.h>
 #include <math.h>
+
 
 //팀만드는 함수
 int Maketeam(int *team_number, int *people_number);
@@ -40,8 +40,9 @@ int main(){
     printf("\n");
 
     //팀을 확인하면 아무키나 누른다 + 화면이 지워진다
-    printf("gather with your team! (If you gather, input anykey)");
-    getch();
+    printf("gather with your team! (If you gather, input enter)");
+    getchar();
+    getc(stdin);
     system("cls");
 
     printf("\n\n");
@@ -79,7 +80,7 @@ int main(){
     Winner(team_number);
     return 0;
 }
-
+  
 
 //팀 만드는 함수
 int Maketeam(int *team_number, int *people_number){
@@ -196,8 +197,9 @@ void ScorePrint(int team_number){
 
     printf("\n");
 
-    printf("\nIf you check all, press anykey.\n");
-    getch();
+    printf("\nIf you check all, press enter.\n");
+    getchar();
+    getc(stdin);
     system("cls");
 }
 
@@ -246,8 +248,9 @@ void Winner(int team_number){
     fclose(fp);
 
     //함수 종료
-    printf("press any key to finish");
-    getch();
+    printf("press enter to finish");
+    getchar();
+    getc(stdin);
 }
 
 
@@ -271,8 +274,9 @@ void GuessNumber(int team_number) {
     printf("5. The score: 1) start score is 150. 2) each count increases -> -10 point\n");
     
     //아무키나 누르면 다음으로 넘어감
-    printf("\nIf you read all, press anykey.\n");
-    getch();
+    printf("\nIf you read all, press enter.\n");
+    getchar();
+    getc(stdin);
 
     printf("Let's start GUESS NUMBER game!\n\n");
     sleep(2);
@@ -361,8 +365,9 @@ void RockSP(int team_number){
     printf("3. The score: 1) win point: +10 2) draw point: +5 3) lose point: -3\n");
     
     //아무키나 누르면 게임이 진행됌
-    printf("\nIf you read all, press anykey.\n");
-    getch();
+    printf("\nIf you read all, press enter.\n");
+    getchar();
+    getc(stdin);
 
     printf("Let's start ROCK SCISSOR PAPER game!\n\n");
     sleep(2);
@@ -469,8 +474,9 @@ void StopWatch(int team_number){
     printf("4. The score:\n 1) +-1: get +300 \n 2) +-2: get +200 \n 3) +-3: get +150 \n 4) +-4: get +100 \n 5) +-5: get +50 \n 6) Else: lose -50.\n");
     
     //아무키나 누르면 게임을 실행
-    printf("\nIf you read all, press anykey.\n");
-    getch();
+    printf("\nIf you read all, press enter.\n");
+    getchar();
+    getc(stdin);
 
     printf("Let's start HUMAN STOPWATCH game!\n\n");
     sleep(2);
@@ -494,8 +500,9 @@ void StopWatch(int team_number){
         sleep(1);
 
         //게임할 준비가 되면 클릭하라고 한다.
-        printf("If your team is ready, please press anykey.\n");
-        getch();
+        printf("If your team is ready, please press enter.\n");
+        getchar();
+        getc(stdin);
 
         //시작한다
         printf("Game will start in 3 seconds\n");
@@ -508,11 +515,12 @@ void StopWatch(int team_number){
         printf("Count start!\n");
         
         //아무키나 누르면 시간재기 시작
-        printf("If you think the time is up, just press any key.\n");
+        printf("If you think the time is up, just press enter.\n");
         start=clock();
 
         //아무 키나 눌렀을 경우 초를 세는 것을 멈추고, 몇초가 지났는지 출력해준다.
-        if(getch()!=-1) end=clock();
+        getchar();
+        if(getc(stdin)!=-1) end=clock();
 
         //지금까지 센 시간을 계산
         timespent=(int)(end-start)/1000; // 초로 나타냄
@@ -584,8 +592,9 @@ void GuessWord(int team_number){
     printf("3. The score: The more answers you get, the faster you get, you will get the higher score.\n");
     
     //아무키나 누르면 게임 시작
-    printf("\nIf you read all, press anykey.\n");
-    getch();
+    printf("\nIf you read all, press enter.\n");
+    getchar();
+    getc(stdin);
 
     printf("Let's start GUESS THE RIGHT WORD game!\n\n");
     sleep(2);
@@ -605,8 +614,9 @@ void GuessWord(int team_number){
 
         //지금 플레이 하는 팀을 알려줌
         printf("Now, team %d's turn.\n",j+1);
-        printf("If team %d gets ready than press any key\n",j+1);
-        getch();
+        printf("If team %d gets ready than press enter\n",j+1);
+        getchar();
+        getc(stdin);
 
         // 문제 5개의 번호를 인덱스 배열에 저장해놓기-중복처리하기
         for(i=0;i<5;i++){
@@ -715,8 +725,9 @@ void SpeakBody(int team_number)
     printf("6. The score: The more answers you get, the faster you get, you will get the higher score.\n");
     
     //아무키나 누르면 게임 시작
-    printf("\nIf you read all, press anykey.\n");
-    getch();
+    printf("\nIf you read all, press enter.\n");
+    getchar();
+    getc(stdin);
     printf("Let's start SPEAK WITH YOUR BODY game!\n\n");
     sleep(2);
 
@@ -741,8 +752,9 @@ void SpeakBody(int team_number)
         // 카테고리 5개 중에 랜덤 지정해서 무슨 카테고리인지 알려줌
         cat=rand()%5;
         printf("%d team's category is \"%s\"\n\n",j+1,category[cat]);
-        printf("If team %d gets ready than press any key\n",j+1);
-        getch();
+        printf("If team %d gets ready than press enter\n",j+1);
+        getchar();
+        getc(stdin);
 
         // 카테고리 별로 문제를 냄
         switch(cat){
@@ -869,7 +881,8 @@ void Random(int people_number){
     printf("\n");
     
     //아무키나 누르면 행운권 추첨 함수 종료
-    printf("press any key\n");
-    getch();
+    printf("press enter\n");
+    getchar();
+    getc(stdin);
     system("cls");
 }
