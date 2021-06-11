@@ -43,7 +43,7 @@ int main(){
     printf("gather with your team! (If you gather, input enter)");
     getchar();
     getc(stdin);
-    system("cls");
+    system("clear");
 
     printf("\n\n");
 
@@ -51,7 +51,7 @@ int main(){
     while(1){
         gamenumber=Menu();
 
-        system("cls");
+        system("clear");
 
         //gamenumber가 0일 경우 레크레이션을 끝낸다
         if(gamenumber==0){
@@ -200,7 +200,7 @@ void ScorePrint(int team_number){
     printf("\nIf you check all, press enter.\n");
     getchar();
     getc(stdin);
-    system("cls");
+    system("clear");
 }
 
 
@@ -228,7 +228,7 @@ void Winner(int team_number){
     }
     sleep(1);
     // 화면 지우고 승자 팀 알려줌
-    system("cls");
+    system("clear");
     printf("TEAM \'%d\'!!!!!!!!!!!!!\n",max_team+1);
     printf("\n\n");
 
@@ -281,7 +281,7 @@ void GuessNumber(int team_number) {
     printf("Let's start GUESS NUMBER game!\n\n");
     sleep(2);
 
-    system("cls");
+    system("clear");
 
     //random seed 제공
     srand(time(NULL));
@@ -330,7 +330,7 @@ void GuessNumber(int team_number) {
 
         //3초쉬고 화면지움
         sleep(3);
-        system("cls");
+        system("clear");
     }
     
     //최종 게임 점수를 팀별로 다 띄워줌
@@ -372,7 +372,7 @@ void RockSP(int team_number){
     printf("Let's start ROCK SCISSOR PAPER game!\n\n");
     sleep(2);
 
-    system("cls");
+    system("clear");
 
     //전체를 팀 수만큼 돌림
     for(i=0;i<team_number;i++){
@@ -440,7 +440,7 @@ void RockSP(int team_number){
         jumsu[i]= 10*score[1] + 5*score[2] -3*score[0];
 
         sleep(2);
-        system("cls");
+        system("clear");
     }
 
     //각 팀별 점수를 띄운다
@@ -481,7 +481,7 @@ void StopWatch(int team_number){
     printf("Let's start HUMAN STOPWATCH game!\n\n");
     sleep(2);
 
-    system("cls");
+    system("clear");
 
     //게임에 참여하는 팀의 번호를 출력
     for(i=0;i<team_number;i++){
@@ -555,7 +555,7 @@ void StopWatch(int team_number){
         sleep(2);
 
         //콘솔창을 지움
-        system("cls");
+        system("clear");
     }
 
     //반복문 종료 후 각 팀들의 점수를 보여줌
@@ -599,7 +599,7 @@ void GuessWord(int team_number){
     printf("Let's start GUESS THE RIGHT WORD game!\n\n");
     sleep(2);
 
-    system("cls");
+    system("clear");
 
     // 랜덤 씨드 지정
     srand(time(NULL));
@@ -678,7 +678,7 @@ void GuessWord(int team_number){
         //게임 결과를 알려줌
         printf("\n\nYou got \'%d\' questions right, and it took \'%d\' seconds.\n\n\n",correct,timespent);
         sleep(3);
-        system("cls");
+        system("clear");
     }
 
     //각 팀별 점수를 띄운다
@@ -731,7 +731,7 @@ void SpeakBody(int team_number)
     printf("Let's start SPEAK WITH YOUR BODY game!\n\n");
     sleep(2);
 
-    system("cls");
+    system("clear");
 
     // 랜덤 씨드 지정
     srand(time(NULL));
@@ -817,7 +817,7 @@ void SpeakBody(int team_number)
         //결과 출력
         printf("\n\nYou got \'%d\' questions right, and it took \'%d\' seconds.\n\n\n",correctcount,timespent);
         sleep(4);
-        system("cls");
+        system("clear");
 
     }
 
@@ -868,7 +868,7 @@ void Random(int people_number){
         printf("%d\n",3-i);
     }
     sleep(1);
-    system("cls");
+    system("clear");
 
     //추첨된 사람 출력
     printf("\n");
@@ -884,5 +884,5 @@ void Random(int people_number){
     printf("press enter\n");
     getchar();
     getc(stdin);
-    system("cls");
+    system("clear");
 }
