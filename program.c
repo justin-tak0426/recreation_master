@@ -67,6 +67,7 @@ int main(){
                 case 3: StopWatch(team_number); break;
                 case 4: GuessWord(team_number); break;
                 case 5: SpeakBody(team_number); break;
+                case 6: Random(people_number); break;
                 case 999: break;
             }
             //각 게임이 실행되고 게임별 점수를 입력하고 누적점수를 출력한다
@@ -582,7 +583,7 @@ void GuessWord(int team_number){
     clock_t start,end; //시간재는 변수 선언, long clock과 같은 형태
 
     // 뒤섞인 단어 알아맞추기
-    printf("\n[5. GUESS THE RIGHT WORD]\n\n");
+    printf("\n[4. GUESS THE RIGHT WORD]\n\n");
     sleep(1);
 
     //게임의 규칙 설명
@@ -713,7 +714,7 @@ void SpeakBody(int team_number)
     clock_t start,end; //시간을 재기위해 필요한 변수, long clock과 같은 형태
 
     // 몸으로 말해요 게임
-    printf("\n[6. SPEAK WITH YOUR BODY]\n\n");
+    printf("\n[5. SPEAK WITH YOUR BODY]\n\n");
     sleep(1);
 
     //게임의 규칙 설명
