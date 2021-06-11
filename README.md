@@ -61,3 +61,34 @@ It is a program that divides teams, plays games among teams, and enters and save
 	1. If a game is not in the program, it is sometimes necessary to enter only the score, so it is more efficient for the host to calculate the score by creating a menu that allows only the score to be entered without proceeding with the game.
 ****
 
+# Why is this project useful?
+## 1.1. Software availability and expected effectiveness
+	1. It can reduce the hassle of preparing and proceeding team recreation games for ice break at the first meeting such as team mt or club mt.
+	2. The team allocation function allows you to organize teams by gathering close people and solve problems that took a long time for the host to count the number of people and make teams. It is also possible to create teams fairly because team members are created completely randomly.
+	3. By entering and calculating scores for each team, the host can eliminate the hassle of writing and adding scores for each team at the end of the game. It can also eliminate the possibility of mistakes in the calculation process.
+	4. The game can be played smoothly and quickly through the use of the game in the program. The game is more fair because various games in the program are also problems created by computers rather than by hosts.
+	5. It can solve problems and difficulties that hosts face in creating games. This is because if you add one by one to the game in the program, you can create more diverse and more diverse and new problems.
+	6. There's a timed function in the game, so speak with your body. In games where timing is important, such as games, it is quite convenient for computers to automatically and accurately tell the game time.
+	7. Since scores are automatically calculated by game, the host can save time when calculating the number of points he or she has adjusted for each team. And scores can be given fairly across the board.
+	8. If you don't need a game, you only need to use SCORE INPUT, which is equivalent to 999, so you can add and subtract points freely even if you don't necessarily use the games in the program in various situations, so you can perfect the score strength, which is the core of recreation.
+****
+
+# How do I get started?
+If you want to start this program,   
+1. visit the website. [Click this](https://wnsgur1343.wixsite.com/recreation-master, "recreation_master webpage")
+2. click to Github link in website.
+3. download files.
+4. run the executable file. (filename: game) 
+> go the the directory where you install my software, and just enter ./game
+5. enjoy the games.
+
+
+****
+
+# Contact
+## Where can I get more help, if I need it?
+If you need some help or want to get more information. please contact me.   
+email: 21800763@handong.edu
+
+# Presentation Video (YouTube) Link
+If you want to see the video, please [click this](  ,"presentation video").
