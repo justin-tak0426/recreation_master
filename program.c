@@ -234,7 +234,7 @@ void Winner(int team_number){
     printf("\n\n");
 
     //날짜를 입력받고, 승리한 팀을 파일에 저장함
-    FILE* fp = fopen("winner.txt","w");
+    FILE* fp = fopen("winner.txt","a");
     int year = 0;
     int month = 0;
     int day = 0;
