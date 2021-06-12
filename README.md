@@ -80,7 +80,10 @@ If you want to start this program,
 3. download files.
 4. run the executable file. (filename: game) 
 > go the the directory where you install my software, and just enter ./game
-5. enjoy the games.
+5. enjoy the games
+
+If you want to know the process of program and get guild book, please click this link.   
+[Guild book](https://drive.google.com/file/d/1V5h4zYNPPv8gcRvb9Mxhwgla70S4ntHR/view?usp=sharing "recreation master guild book")
 
 
 ****
