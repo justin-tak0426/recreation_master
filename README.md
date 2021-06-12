@@ -94,4 +94,4 @@ If you need some help or want to get more information. please contact me.
 email: 21800763@handong.edu
 
 # Presentation Video (YouTube) Link
-If you want to see the video, please [click this](  ,"presentation video").
+If you want to see the video, please [click this](https://youtu.be/kGOWUcaAYKE ,"presentation video").
